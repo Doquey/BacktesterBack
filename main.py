@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from BackTester import BackTester
-from Models import *
+from backend.BacktesterBack.BackTester import BackTester
+from backend.BacktesterBack.Models import *
 import datetime as dt
 
 app = FastAPI()
@@ -30,3 +30,7 @@ def start_test(jobstarter: JobStarter):
                  "portifolio_returns": list(portifolio_returns)}
 
     return to_return
+
+
+if __name__ == "__main__":
+    app()
