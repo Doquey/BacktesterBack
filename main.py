@@ -35,7 +35,3 @@ def start_test(jobstarter: JobStarter):
                  "portifolio_returns": list(portifolio_returns)}
 
     return to_return
-
-
-if __name__ == "__main__":
-    app()
