@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.BacktesterBack.BackTester import BackTester
-from backend.BacktesterBack.Models import *
+from BacktesterBack.BackTester import BackTester
+from BacktesterBack.Models import *
 import datetime as dt
 
 app = FastAPI()
