@@ -15,6 +15,11 @@ app.add_middleware(
 )
 
 
+@app.get("/", tags=["Basic"])
+def home():
+    return "hello world"
+
+
 @app.post("/start_test/", tags=["Main"])
 def start_test(jobstarter: JobStarter):
     endDate = dt.datetime.now()
